@@ -4,45 +4,100 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="js/jscode.js"></script>
 	<h1 style="color:magenta; text-align:center; font-style:italic;">Lanna's Shopping Cart</h1>
-	<h4>Please Choose From The List Below</h4>
+	<h4>Please Choose From The List Below</h4><br/>
 	</head>
-	
-	
-	<body style="text-align:center;">
-	
-	<button onclick="AddToCart(0)">Mist Twist</button>
-	<button onclick="AddToCart(1)">Water</button>
-	<button onclick="AddToCart(2)">Cookies</button>
-	<button onclick="AddToCart(3)">Chocolate</button>
-	<button onclick="AddToCart(4)">Chicken</button>
-	<button onclick="AddToCart(5)">Garlic</button>
-	<button onclick="AddToCart(6)">Onions</button>
-	<button onclick="AddToCart(7)">Tomato</button>
-	<button onclick="AddToCart(8)">Sugar</button>
-	<button onclick="AddToCart(9)">Flour</button>
-	<button onclick="AddToCart(10)">Paper Towel</button>
-	<button onclick="AddToCart(11)">Toilet Paper</button>
 
+				<button onclick="AddToCart(countMT++)">MistTwist | $4.99</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countWater++)">Water | $3.99</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countCookies++)">Cookies | $3.49</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countChoc++)">Chocolate | $3.99</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countChick++)">Chicken | $12.99</button>&nbsp;
+				<button onclick="AddToCart(countGar++)">Garlic | $0.50</button><br/><br/>
+				&nbsp;<button onclick="AddToCart(countOnion++)">Onion | $0.79</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countTom++)">Tomato | $0.99</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countSug++)">Sugar | $2.99</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countFlour++)">Flour | $1.49</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countPT++)">PaperTowel | $6.99</button>&nbsp;
+				&nbsp;<button onclick="AddToCart(countTP++)">ToiletPaper | $8.99</button>&nbsp;
+				
+				
+		<body style="text-align:center;"><br><br/><br/><br>
+		
+			<table align="center" class="Cart" border = 1 style="text-align:center;">
 	
-	      
-	
-	<br></br>
-	<br></br>
-	<table align="center" class="Cart" border = 1 style="text-align:center;">
-	
-	<tr> <th> &nbsp; Product Name &nbsp;</th> <th> &nbsp; Product Quantity &nbsp;</th> <th> &nbsp; Product Price &nbsp;</th> <th> &nbsp; Product Total &nbsp;</th> </tr>
-	
-	
-	<tr>
-	    <td> item </td> 
-		<td> quantity </td> 
-		<td> price </td> 
-		<td> total </td> 
-	</tr>
-	</tr>
+				<tr> <th> &nbsp; Product Name &nbsp;</th> <th> &nbsp; Product Quantity &nbsp;</th> <th> &nbsp; Product Total &nbsp;</th> </tr>
+					<tr>
+						<td> Mist Twist </td> 
+						<td> <span id="displayCountMT">0</span> </td> 
+						<td> $<span id="MistTwist">0</span </td> 
+					</tr>
+					<tr>
+						<td> Water </td> 
+						<td> <span id="displayCountWater">0</span> </td> 
+						<td> $<span id="Water">0</span </td> 
+					</tr>
+					<tr>
+						<td> Cookies </td> 
+						<td> <span id="displayCookies">0</span> </td> 
+						<td> $<span id="Cookies">0</span </td> 
+					</tr>
+					<tr>
+						<td> Chocolate </td> 
+						<td> <span id="displayCountChoc">0</span> </td> 
+						<td> $<span id="Chocolate">0</span </td> 
+					</tr>
+					<tr>
+						<td> Chicken </td> 
+						<td> <span id="displayCountChick">0</span> </td> 
+						<td> $<span id="Chicken">0</span </td> 
+					</tr>
+					<tr>
+						<td> Garlic </td> 
+						<td> <span id="displayCountGar">0</span> </td> 
+						<td> $<span id="Garlic">0</span </td> 
+					</tr>
+					<tr>
+						<td> Onions </td> 
+						<td> <span id="displayCountOnion">0</span> </td> 
+						<td> $<span id="Onions">0</span </td> 
+					</tr>
+					<tr>
+						<td> Tomato </td> 
+						<td> <span id="displayCountTom">0</span> </td> 
+						<td> $<span id="Tomato">0</span </td>
+					</tr>
+					<tr>
+						<td> Sugar </td> 
+						<td> <span id="displayCountSug">0</span> </td> 
+						<td> $<span id="Sugar">0</span </td>
+					</tr>
+					<tr>
+						<td> Flour </td> 
+						<td> <span id="displayCountFlour">0</span> </td> 
+						<td> $<span id="Flour">0</span </td>
+					</tr>
+					<tr>
+						<td> Paper Towel </td> 
+						<td> <span id="displayCountPT">0</span> </td> 
+						<td> $<span id="PaperTowel">0</span </td> 
+					</tr>
+					<tr>
+						<td> Toilet Paper </td> 
+						<td> <span id="displayCountTP">0</span> </td> 
+						<td> $<span id="ToiletPaper">0</span </td>
+					</tr>
+				</tr>
+		
+		<table align="center" class="Cart" border = 1 style="text-align:center;">
+			<tr>
+				<td> Grocery Trip Total -------------------------------------------------------- $</td>
+				 
+				<td> 000.00 </td>
+			</tr>
+			
 	<p id="newText"></p>
 	
-	</table>
+			</table>
 	
 	</body>
 
